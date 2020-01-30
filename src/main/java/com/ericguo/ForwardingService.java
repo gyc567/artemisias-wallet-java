@@ -9,7 +9,6 @@ import org.bitcoinj.core.Transaction;
 import org.bitcoinj.core.TransactionConfidence;
 import org.bitcoinj.crypto.KeyCrypterException;
 import org.bitcoinj.kits.WalletAppKit;
-import org.bitcoinj.params.MainNetParams;
 import org.bitcoinj.params.RegTestParams;
 import org.bitcoinj.params.TestNet3Params;
 import org.bitcoinj.utils.BriefLogFormatter;
@@ -33,39 +32,43 @@ import static com.google.common.base.Preconditions.checkNotNull;
 public class ForwardingService {
     private static Address forwardingAddress;
     private static WalletAppKit kit;
+    private static String addr = "2MtXTrCYziArNmK495u3vvuFLyDdCf4FZHt";
 
     public static void main(String[] args) throws Exception {
         // This line makes the log output more compact and easily read, especially when
         // using the JDK log adapter.
         BriefLogFormatter.init();
-        if (args.length < 1) {
-            System.err.println("Usage: address-to-send-back-to [regtest|testnet]");
-            return;
-        }
+        // if (args.length < 1) {
+        // System.err.println("Usage: address-to-send-back-to [regtest|testnet]");
+        // return;
+        // }
 
         // Figure out which network we should connect to. Each one gets its own set of
         // files.
         NetworkParameters params;
         String filePrefix;
-        if (args.length > 1 && args[1].equals("testnet")) {
-            params = TestNet3Params.get();
-            filePrefix = "forwarding-service-testnet";
-        } else if (args.length > 1 && args[1].equals("regtest")) {
-            params = RegTestParams.get();
-            filePrefix = "forwarding-service-regtest";
-        } else {
-            params = MainNetParams.get();
-            filePrefix = "forwarding-service";
-        }
+        // if (args.length > 1 && args[1].equals("testnet")) {
+        // params = TestNet3Params.get();
+        // filePrefix = "forwarding-service-testnet";
+        // } else if (args.length > 1 && args[1].equals("regtest")) {
+        // params = RegTestParams.get();
+        // filePrefix = "forwarding-service-regtest";
+        // } else {
+        // params = MainNetParams.get();
+        // filePrefix = "forwarding-service";
+        // }
+        params = TestNet3Params.get();
+        filePrefix = "forwarding-service-testnet";
         // Parse the address given as the first parameter.
-        forwardingAddress = LegacyAddress.fromBase58(params, args[0]);
+        // forwardingAddress = LegacyAddress.fromBase58(params, args[0]);
+        forwardingAddress = LegacyAddress.fromBase58(params, addr);
 
         System.out.println("Network: " + params.getId());
         System.out.println("Forwarding address: " + forwardingAddress);
 
         // Start up a basic app using a class that automates some boilerplate.
         kit = new WalletAppKit(params, new File("."), filePrefix);
-
+        System.out.println("Start up a basic app using Kit: " + kit);
         if (params == RegTestParams.get()) {
             // Regression test mode is designed for testing and development only, so there's
             // no public network for it.
@@ -75,9 +78,11 @@ public class ForwardingService {
         }
 
         // Download the block chain and wait until it's done.
+        System.out.println("Download the block chain and wait until it's done.: " + kit);
         kit.startAsync();
+        System.out.println("startAsync:done ");
         kit.awaitRunning();
-
+        System.out.println("awaitRunning:done ");
         // We want to know when we receive money.
         kit.wallet().addCoinsReceivedEventListener(new WalletCoinsReceivedEventListener() {
             @Override

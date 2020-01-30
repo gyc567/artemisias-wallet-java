@@ -24,6 +24,7 @@ public class BtcUtils {
         System.out.println("seed: " + seed.toString());
 
         System.out.println("creation time: " + seed.getCreationTimeSeconds());
+        System.out.println("MnemonicCode: " + seed.getMnemonicCode());
         String join = Utils.SPACE_JOINER.join(seed.getMnemonicCode());
         System.out.println("mnemonicCode: " + join);
         return join;
