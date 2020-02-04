@@ -1,0 +1,6 @@
+
+https://github.com/bitcoinj/bitcoinj
+https://www.web3labs.com/web3j
+https://github.com/espritblock/eos4
+
+https://github.com/eostea/eos-tutorials
