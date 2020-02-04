@@ -17,7 +17,9 @@ import java.io.File;
 
 public class BtcUtils {
     public static String getMnemonicCodeWord() {
-        NetworkParameters params = TestNet3Params.get();
+        // NetworkParameters params = TestNet3Params.get();
+        NetworkParameters params = NetworkEnum.TEST.get();
+
         Wallet wallet = Wallet.createDeterministic(params, Script.ScriptType.P2PKH);
 
         DeterministicSeed seed = wallet.getKeyChainSeed();
@@ -30,7 +32,7 @@ public class BtcUtils {
         return join;
     }
 
-    public static String restoreFromSeed(String seedCode)
+    public static String restoreFromSeed(String seedCode, Long birthday)
             throws InterruptedException, BlockStoreException, UnreadableWalletException {
         NetworkParameters params = TestNet3Params.get();
 
@@ -46,10 +48,10 @@ public class BtcUtils {
         // String seedCode = "yard impulse luxury drive today throw farm pepper survey
         // wreck glass federal";
         String passphrase = "";
-        Long creationtime = 1409478661L;
+        // Long creationtime = 1409478661L;
         // Long creationtime = System.currentTimeMillis();
 
-        DeterministicSeed seed = new DeterministicSeed(seedCode, null, passphrase, creationtime);
+        DeterministicSeed seed = new DeterministicSeed(seedCode, null, passphrase, birthday);
 
         // The wallet class provides a easy fromSeed() function that loads a new wallet
         // from a given seed.

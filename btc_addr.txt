@@ -16,6 +16,15 @@ apology outer left hello behind border hover horror
 
 pin:8577
 
+
+
+testnet addr 加密助记词（密码8577）：
+
+
+argue symbol rib travel match stable december 
+goddess pact puppy release electric flavor frequent 
+client major circle panda popular sketch tongue hobby girl jar outer cake praise
+
 testnet addr:
 2MtXTrCYziArNmK495u3vvuFLyDdCf4FZHt
 

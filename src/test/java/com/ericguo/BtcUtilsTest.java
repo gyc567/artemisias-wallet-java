@@ -11,13 +11,6 @@ import static org.junit.Assert.assertNotNull;
  * Unit test for simple App.
  */
 public class BtcUtilsTest {
-    /**
-     * Rigorous Test :-)
-     */
-    @Test
-    public void shouldAnswerWithTrue() {
-        assertTrue(true);
-    }
 
     @Test
     public void getMnemonicCodeWordTest() {
@@ -26,12 +19,16 @@ public class BtcUtilsTest {
 
     @Test
     public void testRestoreFromSeed() {
-        String seedCode = "yard impulse luxury drive today throw farm pepper survey wreck glass federal";
+        // String seedCode = "yard impulse luxury drive today throw farm pepper survey
+        // wreck glass federal";
+        String seedCode = "wide power fold flame question chunk ready harbor medal olympic latin elevator";
+        Long birthday = 1580354278L;
         try {
-            assertNotNull(BtcUtils.restoreFromSeed(seedCode));
+            assertNotNull(BtcUtils.restoreFromSeed(seedCode, birthday));
         } catch (InterruptedException | BlockStoreException | UnreadableWalletException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
+
     }
 }

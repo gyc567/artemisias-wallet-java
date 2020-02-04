@@ -44,7 +44,11 @@
       <version>1.7.30</version>
       <scope>test</scope>
     </dependency>
-
+<dependency>
+  <groupId>org.web3j</groupId>
+  <artifactId>core</artifactId>
+  <version>4.5.12</version>
+</dependency>
   </dependencies>
 
   <build>

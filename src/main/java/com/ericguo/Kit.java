@@ -105,6 +105,7 @@ public class Kit {
         // To test everything we create and print a fresh receiving address. Send some
         // coins to that address and see if everything works.
         System.out.println("now wallet address: " + kit.wallet().currentReceiveAddress().toString());
+        System.out.println("now wallet currentReceiveKey: " + kit.wallet().currentReceiveKey().toString());
         System.out.println("send money to: " + kit.wallet().freshReceiveAddress().toString());
         Thread.sleep(100000L);
         // Make sure to properly shut down all the running services when you manually
