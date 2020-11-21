@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: artemisias-wallet
+  cloud:
+    config:
+      enabled: false

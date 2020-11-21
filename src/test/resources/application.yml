@@ -1,0 +1,52 @@
+## huobi spot api
+huobi:
+  scheduler:
+    cron: 0 0/1 * * * *
+    eod:
+      currency-fetch: 0 3/30 * * * ?
+  api:
+    spot:
+      #测试备份服务器：https://api.huobi.de.com
+     #host: https://api.huobi.pro
+      host: https://api.huobi.de.com
+    future:
+      #host: https://api.hbdm.com
+      host: https://api.btcgateway.pro
+    wss:
+      spot:
+        #资产与订单：wss://api.huobi.pro/ws/v2 wss://api-aws.huobi.pro/ws/v2
+        #测试：wss://api.huobi.de.com/ws/v2
+       # host: wss://api.huobi.pro/ws/v2
+        host: wss://api.huobi.de.com/ws/v2
+        market:
+          #行情：wss://api.huobi.pro/ws wss://api-aws.huobi.pro/ws
+          #测试： wss://api.huobi.de.com/ws
+          host: wss://api.huobi.de.com/ws
+          #host: wss://api.huobi.pro/ws
+
+      future:
+        #合约站订单推送订阅地址：wss://api.hbdm.com/notification  wss://api.btcgateway.pro
+        #host: wss://api.hbdm.com/
+        host: wss://api.btcgateway.pro/
+
+## blowfish
+blowfish:
+  secret:
+    key: 51s12HHac-500$5ud-4b8e-aad8-874645tre@
+
+
+dingtalk:
+  notice:
+    webhook: https://oapi.dingtalk.com/robot/send?access_token=06dd0aaca36f604b99e45706d4bab0b2b095f598068847f70c382993aa6c1909
+    secret: SECc663cbfea78e5a82ee77963c8542b22fb3e4409e4535f346fef76a9ef940171f
+
+spring:
+  application:
+    name: feign_app
+server:
+  port: 8089
+  servlet:
+    context-path: /
+feign:
+  hystrix:
+    enabled: true
