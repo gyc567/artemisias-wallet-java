@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.mochi;
+package com.artemisias;
 
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;

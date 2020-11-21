@@ -1,4 +1,4 @@
-package com.mochi.eth;
+package com.artemisias.eth;
 
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;

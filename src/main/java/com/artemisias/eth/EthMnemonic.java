@@ -1,4 +1,4 @@
-package com.mochi.eth;
+package com.artemisias.eth;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

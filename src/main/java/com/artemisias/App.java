@@ -1,4 +1,4 @@
-package com.mochi;
+package com.artemisias;
 
 /**
  * Hello world!

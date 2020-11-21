@@ -1,4 +1,4 @@
-package com.mochi.eth;
+package com.artemisias.eth;
 
 import java.io.File;
 import java.io.IOException;

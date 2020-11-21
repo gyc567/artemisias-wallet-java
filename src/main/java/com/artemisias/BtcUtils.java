@@ -1,4 +1,4 @@
-package com.mochi;
+package com.artemisias;
 
 import org.bitcoinj.core.NetworkParameters;
 import org.bitcoinj.core.Utils;

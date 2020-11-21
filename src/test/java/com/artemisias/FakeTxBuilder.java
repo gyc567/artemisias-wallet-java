@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.mochi;
+package com.artemisias;
 
 import org.bitcoinj.core.Address;
 import org.bitcoinj.core.Block;
