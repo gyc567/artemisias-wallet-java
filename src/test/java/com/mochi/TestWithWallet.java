@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.ericguo;
+package com.mochi;
 
 import org.bitcoinj.core.AbstractBlockChain;
 import org.bitcoinj.core.Address;
@@ -36,8 +36,8 @@ import org.bitcoinj.wallet.Wallet;
 
 import javax.annotation.Nullable;
 
-import static com.ericguo.FakeTxBuilder.createFakeBlock;
-import static com.ericguo.FakeTxBuilder.createFakeTx;
+import static com.mochi.FakeTxBuilder.createFakeBlock;
+import static com.mochi.FakeTxBuilder.createFakeTx;
 
 // TODO: This needs to be somewhat rewritten - the "sendMoneyToWallet" methods aren't sending via the block chain object
 

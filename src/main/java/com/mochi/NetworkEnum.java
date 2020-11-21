@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.ericguo;
+package com.mochi;
 
 import org.bitcoinj.core.NetworkParameters;
 import org.bitcoinj.params.MainNetParams;

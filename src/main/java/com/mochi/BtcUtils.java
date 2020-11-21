@@ -1,4 +1,4 @@
-package com.ericguo;
+package com.mochi;
 
 import org.bitcoinj.core.NetworkParameters;
 import org.bitcoinj.core.Utils;

@@ -1,4 +1,4 @@
-package com.ericguo.eth;
+package com.mochi.eth;
 
 import java.io.File;
 import java.io.IOException;
@@ -17,10 +17,7 @@ import org.web3j.protocol.core.methods.response.TransactionReceipt;
 import org.web3j.protocol.http.HttpService;
 // import org.web3j.sample.contracts.generated.Greeter;
 import org.web3j.tx.Transfer;
-import org.web3j.tx.gas.ContractGasProvider;
-import org.web3j.tx.gas.DefaultGasProvider;
 import org.web3j.utils.Convert;
-import org.web3j.utils.Numeric;
 
 /**
  * A simple web3j application that demonstrates a number of core features of

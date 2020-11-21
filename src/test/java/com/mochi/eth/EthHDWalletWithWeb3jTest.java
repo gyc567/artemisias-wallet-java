@@ -1,4 +1,4 @@
-package com.ericguo.eth;
+package com.mochi.eth;
 
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;

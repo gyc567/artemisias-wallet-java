@@ -1,0 +1,7 @@
+com/mochi/eth/EthHDWalletWithWeb3jTest.class
+com/mochi/TestWithWallet.class
+com/mochi/FakeTxBuilder.class
+com/mochi/FakeTxBuilder$DoubleSpends.class
+com/mochi/AppTest.class
+com/mochi/BtcUtilsTest.class
+com/mochi/FakeTxBuilder$BlockPair.class

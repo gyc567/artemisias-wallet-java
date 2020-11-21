@@ -1,4 +1,4 @@
-package com.ericguo;
+package com.mochi;
 
 import org.bitcoinj.core.*;
 import org.bitcoinj.kits.WalletAppKit;

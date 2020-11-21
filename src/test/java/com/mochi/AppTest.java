@@ -1,4 +1,4 @@
-package com.ericguo;
+package com.mochi;
 
 import static org.junit.Assert.assertTrue;
 

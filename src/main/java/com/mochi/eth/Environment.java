@@ -1,4 +1,4 @@
-package com.ericguo.eth;
+package com.mochi.eth;
 
 /**
  * 运行配置项

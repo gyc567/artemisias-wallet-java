@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.ericguo;
+package com.mochi;
 
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;
@@ -23,7 +23,6 @@ import com.google.common.util.concurrent.MoreExecutors;
 
 import org.bitcoinj.core.*;
 import org.bitcoinj.kits.WalletAppKit;
-import org.bitcoinj.params.TestNet3Params;
 import org.bitcoinj.wallet.Wallet;
 import org.bitcoinj.wallet.Wallet.BalanceType;
 import org.bitcoinj.wallet.DeterministicSeed;

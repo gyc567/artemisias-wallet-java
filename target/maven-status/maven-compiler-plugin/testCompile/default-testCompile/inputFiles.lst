@@ -1,2 +1,5 @@
-E:\code\java\btc-wallet\src\test\java\com\ericguo\BtcUtilsTest.java
-E:\code\java\btc-wallet\src\test\java\com\ericguo\AppTest.java
+/Users/gyc567/code_base/github/btc-wallet-java/src/test/java/com/mochi/TestWithWallet.java
+/Users/gyc567/code_base/github/btc-wallet-java/src/test/java/com/mochi/BtcUtilsTest.java
+/Users/gyc567/code_base/github/btc-wallet-java/src/test/java/com/mochi/AppTest.java
+/Users/gyc567/code_base/github/btc-wallet-java/src/test/java/com/mochi/eth/EthHDWalletWithWeb3jTest.java
+/Users/gyc567/code_base/github/btc-wallet-java/src/test/java/com/mochi/FakeTxBuilder.java
