@@ -4,13 +4,13 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.artemisias.btc</groupId>
+  <groupId>com.artemisias.crypto.net</groupId>
   <artifactId>artemisias-wallet</artifactId>
   <version>1.0</version>
 
   <name>artemisias-wallet</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+
+  <url>https://github.com/gyc567/btc-wallet-java</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

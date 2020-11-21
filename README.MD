@@ -1,4 +1,4 @@
-this is btc-wallet for java version.
+this is crypto currencies (btc,eth)wallet for java version.
 
 package name :artemisias
 
