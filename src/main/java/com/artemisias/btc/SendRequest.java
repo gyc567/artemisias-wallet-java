@@ -14,8 +14,9 @@
  * limitations under the License.
  */
 
-package com.artemisias;
+package com.artemisias.btc;
 
+import com.artemisias.NetworkEnum;
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;

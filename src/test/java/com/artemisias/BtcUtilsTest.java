@@ -2,6 +2,7 @@ package com.artemisias;
 
 import static org.junit.Assert.assertTrue;
 
+import com.artemisias.btc.BtcUtils;
 import org.bitcoinj.store.BlockStoreException;
 import org.bitcoinj.wallet.UnreadableWalletException;
 import org.junit.Test;

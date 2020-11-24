@@ -1,4 +1,4 @@
-package com.artemisias;
+package com.artemisias.btc;
 
 import org.bitcoinj.core.*;
 import org.bitcoinj.kits.WalletAppKit;
