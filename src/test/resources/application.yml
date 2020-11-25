@@ -42,7 +42,7 @@ dingtalk:
 
 spring:
   application:
-    name: feign_app
+    name: artemisias-wallet
 server:
   port: 8089
   servlet:
@@ -50,3 +50,9 @@ server:
 feign:
   hystrix:
     enabled: true
+
+javadevjournal:
+  welcome:
+    message: A warm and long greeting from Javadevjournal Team!! to show \
+      how we can use the backslash character to improve the overall \
+      readability of the file.
