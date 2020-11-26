@@ -1,5 +1,6 @@
 package com.artemisias;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
@@ -15,6 +16,9 @@ public class AppTest
     @Test
     public void shouldAnswerWithTrue()
     {
+        boolean equals = Boolean.TRUE.equals(null);
+        assertEquals(false,equals);
         assertTrue( true );
+
     }
 }
