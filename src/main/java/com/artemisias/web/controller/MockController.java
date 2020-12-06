@@ -1,5 +1,6 @@
 package com.artemisias.web.controller;
 
+import com.artemisias.exception.BaseException;
 import com.artemisias.web.model.Account;
 import com.artemisias.web.model.Result;
 import com.google.common.collect.Lists;
@@ -47,6 +48,7 @@ public class MockController {
                 .number("123").build();
         accounts.add(a);
         Result<Object> success = Result.success(accounts);
+//        throw new BaseException("just test error!","404");
         return success;
     }
 
